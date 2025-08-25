@@ -1,0 +1,65 @@
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+import RedditAdAPI from 'reddit-ad-api';
+
+const client = new RedditAdAPI({
+  apiKey: 'My API Key',
+  baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
+});
+
+describe('resource ads', () => {
+  // Prism tests are disabled
+  test.skip('retrieve', async () => {
+    const responsePromise = client.ads.retrieve('ad_id');
+    const rawResponse = await responsePromise.asResponse();
+    expect(rawResponse).toBeInstanceOf(Response);
+    const response = await responsePromise;
+    expect(response).not.toBeInstanceOf(Response);
+    const dataAndResponse = await responsePromise.withResponse();
+    expect(dataAndResponse.data).toBe(response);
+    expect(dataAndResponse.response).toBe(rawResponse);
+  });
+
+  // Prism tests are disabled
+  test.skip('update: only required params', async () => {
+    const responsePromise = client.ads.update('ad_id', { data: {} });
+    const rawResponse = await responsePromise.asResponse();
+    expect(rawResponse).toBeInstanceOf(Response);
+    const response = await responsePromise;
+    expect(response).not.toBeInstanceOf(Response);
+    const dataAndResponse = await responsePromise.withResponse();
+    expect(dataAndResponse.data).toBe(response);
+    expect(dataAndResponse.response).toBe(rawResponse);
+  });
+
+  // Prism tests are disabled
+  test.skip('update: required and optional params', async () => {
+    const response = await client.ads.update('ad_id', {
+      data: {
+        campaign_objective_type: 'IMPRESSIONS',
+        click_url: 'https://www.redditinc.com/',
+        click_url_query_parameters: [
+          { name: 'utm_source', value: 'reddit' },
+          { name: 'utm_medium', value: '{{AD_ID}}' },
+        ],
+        configured_status: 'ACTIVE',
+        event_trackers: [{ type: 'CLICK', url: 'https://www.redditinc.com/' }],
+        name: 'My Ad',
+        post_id: 't3_12345',
+        preview_expiry: '2023-03-27T21:18:39.927000+00:00',
+        products: [{ product_id: '1234' }],
+        profile_id: 'profile_id',
+        profile_username: 'profile_username',
+        shopping_creative: {
+          allow_comments: true,
+          call_to_action: 'Shop Now',
+          destination_url: 'https://www.redditinc.com/',
+          dpa_carousel_mode: 'AUTO',
+          headline: 'Sample Headline',
+          second_line_cta: 'PRICE',
+        },
+        type: 'UNSPECIFIED',
+      },
+    });
+  });
+});
