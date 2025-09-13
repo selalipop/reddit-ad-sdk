@@ -1,5 +1,5 @@
 {
-  "name": "reddit-ad-api",
+  "name": "unofficial-reddit-ad-api",
   "version": "0.0.1",
   "description": "The official TypeScript library for the Reddit Ad API API",
   "author": "Reddit Ad API <>",
