@@ -9,8 +9,8 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "reddit-ad-api/*": ["src/*"],
-      "reddit-ad-api": ["src/index.ts"]
+      "unofficial-reddit-ad-api/*": ["src/*"],
+      "unofficial-reddit-ad-api": ["src/index.ts"]
     },
     "noEmit": true,
 

@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'reddit-ad-api/internal/uploads';
-import { toFile } from 'reddit-ad-api/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'unofficial-reddit-ad-api/internal/uploads';
+import { toFile } from 'unofficial-reddit-ad-api/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "reddit-ad-api/*": ["dist/src/*"],
-      "reddit-ad-api": ["dist/src/index.ts"]
+      "unofficial-reddit-ad-api/*": ["dist/src/*"],
+      "unofficial-reddit-ad-api": ["dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

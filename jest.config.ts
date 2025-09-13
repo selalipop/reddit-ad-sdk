@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^reddit-ad-api$': '<rootDir>/src/index.ts',
-    '^reddit-ad-api/(.*)$': '<rootDir>/src/$1',
+    '^unofficial-reddit-ad-api$': '<rootDir>/src/index.ts',
+    '^unofficial-reddit-ad-api/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

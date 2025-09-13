@@ -42,25 +42,25 @@ If you’d like to use the repository from source, you can either install from g
 To install via git:
 
 ```sh
-$ npm install git+ssh://git@github.com:stainless-sdks/reddit-ad-api-typescript.git
+$ npm install git+ssh://git@github.com:selalipop/reddit-ad-sdk.git
 ```
 
 Alternatively, to link a local copy of the repo:
 
 ```sh
 # Clone
-$ git clone https://www.github.com/stainless-sdks/reddit-ad-api-typescript
-$ cd reddit-ad-api-typescript
+$ git clone https://www.github.com/selalipop/reddit-ad-sdk
+$ cd reddit-ad-sdk
 
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link reddit-ad-api
+$ yarn link unofficial-reddit-ad-api
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global reddit-ad-api
+$ pnpm link -—global unofficial-reddit-ad-api
 ```
 
 ## Running tests
@@ -91,3 +91,17 @@ To format and fix all lint issues automatically:
 ```sh
 $ yarn fix
 ```
+
+## Publishing and releases
+
+Changes made to this repository via the automated release PR pipeline should publish to npm automatically. If
+the changes aren't made through the automated pipeline, you may want to make releases manually.
+
+### Publish with a GitHub workflow
+
+You can release to package managers by using [the `Publish NPM` GitHub action](https://www.github.com/selalipop/reddit-ad-sdk/actions/workflows/publish-npm.yml). This requires a setup organization or repository secret to be set up.
+
+### Publish manually
+
+If you need to manually release a package, you can run the `bin/publish-npm` script with an `NPM_TOKEN` set on
+the environment.
