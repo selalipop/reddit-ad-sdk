@@ -20,8 +20,6 @@ import * as ProductsAPI from './products';
 import {
   ProductBatchDeleteParams,
   ProductBatchDeleteResponse,
-  ProductBatchUpsertParams,
-  ProductBatchUpsertResponse,
   ProductListParams,
   ProductListResponse,
   Products,
@@ -723,9 +721,7 @@ export declare namespace ProductCatalogs {
     Products as Products,
     type ProductListResponse as ProductListResponse,
     type ProductBatchDeleteResponse as ProductBatchDeleteResponse,
-    type ProductBatchUpsertResponse as ProductBatchUpsertResponse,
     type ProductListParams as ProductListParams,
     type ProductBatchDeleteParams as ProductBatchDeleteParams,
-    type ProductBatchUpsertParams as ProductBatchUpsertParams,
   };
 }
