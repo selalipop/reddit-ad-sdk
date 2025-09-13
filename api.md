@@ -347,12 +347,13 @@ Types:
 
 - <code><a href="./src/resources/product-catalogs/products.ts">ProductListResponse</a></code>
 - <code><a href="./src/resources/product-catalogs/products.ts">ProductBatchDeleteResponse</a></code>
+- <code><a href="./src/resources/product-catalogs/products.ts">ProductBatchUpsertResponse</a></code>
 
 Methods:
 
 - <code title="get /product_catalogs/{catalog_id}/products">client.productCatalogs.products.<a href="./src/resources/product-catalogs/products.ts">list</a>(catalogID, { ...params }) -> ProductListResponse</code>
 - <code title="post /product_catalogs/{catalog_id}/products/batch_delete">client.productCatalogs.products.<a href="./src/resources/product-catalogs/products.ts">batchDelete</a>(catalogID, { ...params }) -> ProductBatchDeleteResponse</code>
-- <code title="post /product_catalogs/{catalog_id}/products/batch_upsert">client.productCatalogs.products.<a href="./src/resources/product-catalogs/products.ts">batchUpsert</a>(catalogID, { ...params }) -> void</code>
+- <code title="post /product_catalogs/{catalog_id}/products/batch_upsert">client.productCatalogs.products.<a href="./src/resources/product-catalogs/products.ts">batchUpsert</a>(catalogID, { ...params }) -> ProductBatchUpsertResponse</code>
 
 # ProductFeeds
 
