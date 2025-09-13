@@ -25,6 +25,7 @@ export {
   Products,
   type ProductListResponse,
   type ProductBatchDeleteResponse,
+  type ProductBatchUpsertResponse,
   type ProductListParams,
   type ProductBatchDeleteParams,
   type ProductBatchUpsertParams,
