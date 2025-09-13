@@ -1,4 +1,4 @@
-import { createPathTagFunction, encodeURIPath } from 'reddit-ad-api/internal/utils/path';
+import { createPathTagFunction, encodeURIPath } from 'unofficial-reddit-ad-api/internal/utils/path';
 import { inspect } from 'node:util';
 import { runInNewContext } from 'node:vm';
 

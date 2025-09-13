@@ -1,7 +1,7 @@
 import iconv from 'iconv-lite';
-import { stringify } from 'reddit-ad-api/internal/qs';
-import { encode } from 'reddit-ad-api/internal/qs/utils';
-import { StringifyOptions } from 'reddit-ad-api/internal/qs/types';
+import { stringify } from 'unofficial-reddit-ad-api/internal/qs';
+import { encode } from 'unofficial-reddit-ad-api/internal/qs/utils';
+import { StringifyOptions } from 'unofficial-reddit-ad-api/internal/qs/types';
 import { empty_test_cases } from './empty-keys-cases';
 import assert from 'assert';
 

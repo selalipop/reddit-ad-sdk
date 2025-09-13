@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { RedditAdAPI } from 'reddit-ad-api';
+import { RedditAdAPI } from 'unofficial-reddit-ad-api';
 
 const { stringifyQuery } = RedditAdAPI.prototype as any;
 

@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'reddit-ad-api/core/api-promise';
+import { APIPromise } from 'unofficial-reddit-ad-api/core/api-promise';
 
 import util from 'node:util';
-import RedditAdAPI from 'reddit-ad-api';
-import { APIUserAbortError } from 'reddit-ad-api';
+import RedditAdAPI from 'unofficial-reddit-ad-api';
+import { APIUserAbortError } from 'unofficial-reddit-ad-api';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {
