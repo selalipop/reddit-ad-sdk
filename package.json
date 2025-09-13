@@ -1,6 +1,6 @@
 {
   "name": "reddit-ad-api",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The official TypeScript library for the Reddit Ad API API",
   "author": "Reddit Ad API <>",
   "types": "dist/index.d.ts",
