@@ -108,16 +108,18 @@ export class PagePromise<
 
 export interface CursorURLPageResponse<Item> {
   data: Array<Item>;
+
+  next_url: string;
 }
 
 export interface CursorURLPageParams {
-  page_size?: number;
+  'page.size'?: number;
 }
 
 export class CursorURLPage<Item> extends AbstractPage<Item> implements CursorURLPageResponse<Item> {
   data: Array<Item>;
 
-  next_url: string | null;
+  next_url: string;
 
   constructor(
     client: RedditAdAPI,
@@ -128,7 +130,7 @@ export class CursorURLPage<Item> extends AbstractPage<Item> implements CursorURL
     super(client, response, body, options);
 
     this.data = body.data || [];
-    this.next_url = this.response.headers.get('link') ?? null;
+    this.next_url = body.next_url || '';
   }
 
   getPaginatedItems(): Item[] {
