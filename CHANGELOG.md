@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.2.0 (2025-09-20)
+
+Full Changelog: [v0.1.0...v0.2.0](https://github.com/selalipop/reddit-ad-sdk/compare/v0.1.0...v0.2.0)
+
+### Features
+
+* **api:** manual updates ([95920d7](https://github.com/selalipop/reddit-ad-sdk/commit/95920d7cff3d1701366e851b7de3cf5837e960e3))
+* **api:** manual updates ([c86903e](https://github.com/selalipop/reddit-ad-sdk/commit/c86903ea21fcb3c00c6888dd5df7eac5f1830595))
+* **api:** manual updates ([ad341be](https://github.com/selalipop/reddit-ad-sdk/commit/ad341befd25a8af8c638c50fd80827f607d670dd))
+
+
+### Chores
+
+* do not install brew dependencies in ./scripts/bootstrap by default ([a52dd06](https://github.com/selalipop/reddit-ad-sdk/commit/a52dd0657f998e222e41b385de20bfa35a345d1f))
+
 ## 0.1.0 (2025-09-13)
 
 Full Changelog: [v0.0.1...v0.1.0](https://github.com/selalipop/reddit-ad-sdk/compare/v0.0.1...v0.1.0)
